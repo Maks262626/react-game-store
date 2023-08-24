@@ -11,7 +11,7 @@ const Catalog:React.FC = () => {
                 <Search/>
                 <ProfileAction/>
             </div>
-            {/* <SliderCarousel/> */}
+            <SliderCarousel/>
             <Filters/>
             <Products/>
         </div>

@@ -1,6 +1,6 @@
 import { useDispatch } from 'react-redux';
 import s from './Search.module.scss';
-import { ChangeEvent, useCallback, useEffect, useState } from 'react';
+import { ChangeEvent, useCallback, useState } from 'react';
 import debounce from 'lodash.debounce';
 import seacrhIcon from '../../assets/icon/search.svg';
 import close from '../../assets/icon/close.svg';
