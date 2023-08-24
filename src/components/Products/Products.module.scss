@@ -1,0 +1,35 @@
+.productLink {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background-color: $darkGray;
+    border-radius: 8px;
+    padding: 10px;
+    transition: .3s;
+    text-decoration: none;
+    color: #fff ;
+    border: 5px solid transparent;
+    &:hover{
+        border: 5px solid rgba($purpleLight,.5);
+        transition: .3s;
+    }
+}
+.products{
+    font-family: 'Inter';
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 16px;
+
+    @media (max-width: 1800px){
+        grid-template-columns: repeat(4, 1fr);
+    }
+    @media (max-width: 1400px){
+        grid-template-columns: repeat(3, 1fr);
+    }
+    @media (max-width: 1100px){
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width: 600px){
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

@@ -1,0 +1,16 @@
+.page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: $darkGray;
+    &:hover{
+        background-color: $purpleDark;
+        img{
+            filter: brightness(0) invert(1);
+        }
+    }
+    &.active{
+        background-color: $purpleDark;
+    }
+}

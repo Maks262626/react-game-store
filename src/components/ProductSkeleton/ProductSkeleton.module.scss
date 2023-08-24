@@ -1,0 +1,17 @@
+.product{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    min-height: 510px;
+}
+.image{
+    margin-bottom: 20px;
+}
+.category{
+    width: 80%;
+    margin: 0 auto;
+}
+.price{
+    width: 50%; 
+    margin: 0 auto auto auto;
+}

@@ -1,0 +1,31 @@
+.content{
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background: url('../../assets/img/NotFoundBG.png') no-repeat;
+    background-size: cover;
+}
+.logo{
+    display: flex;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    h1{
+        font-size: 60px;
+        margin: 0;
+    }
+    p{
+        font-size: 40px;
+    }
+}
+.back{
+    font-size: 30px;
+    padding: 10px 15px;
+}

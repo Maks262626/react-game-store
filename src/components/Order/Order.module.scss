@@ -1,0 +1,32 @@
+.order{
+    display: flex;
+    background-color: $darkGray;
+    padding: 20px;
+    border-radius: 10px;
+}
+.oderImg{
+    background-color: #fff;
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+    max-width: 100%;
+    object-fit: contain;
+    border: 4px solid transparent;
+    &:hover{
+        border: 4px solid $purpleDark;
+    }
+}
+.left{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    flex: 0 1 50%;
+}
+.right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 30px;
+    padding: 0 20px;
+    flex: 0 1 50%;
+}

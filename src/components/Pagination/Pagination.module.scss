@@ -1,0 +1,40 @@
+.pagination{
+    display: flex;
+    gap: 10px;
+    padding-top: 20px;
+    img{
+        width: 20px;
+        height: 20px;
+        filter: invert(58%) sepia(19%) saturate(0%) hue-rotate(278deg) brightness(89%) contrast(101%);
+    }
+}
+.mainPages{
+    display: flex;
+    gap: 10px;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+.prev{
+    img{
+        rotate: 180deg;
+    }
+}
+.page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: $darkGray;
+    &:hover{
+        background-color: $purpleDark;
+        img{
+            filter: brightness(0) invert(1);
+        }
+    }
+    &.active{
+        background-color: $purpleDark;
+    }
+}

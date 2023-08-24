@@ -1,0 +1,30 @@
+.page {
+    display: flex;
+    align-items: center;
+    padding: 25px 23px;
+    cursor: pointer;
+    img{
+        width: 32px;
+        height: 32px;
+        margin-right: 25px;
+        filter: invert(58%) sepia(19%) saturate(0%) hue-rotate(278deg) brightness(89%) contrast(101%);
+        @media (max-height: 880px) {
+            width: 20px;
+            height: 20px;
+            margin-right: 15px;
+        }
+    }
+    &.active{
+        background-color: $purpleDark;
+        img{
+            filter: brightness(0) invert(1);
+        }
+    }
+    &:hover{
+        background-color: $purpleDark;
+        img{
+            filter: brightness(0) invert(1);
+        }
+    }
+
+}

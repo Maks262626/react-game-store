@@ -1,0 +1,27 @@
+.title{
+    font-size: 24px;
+    font-weight: 700;
+    padding-top: 32px;
+
+}
+.filters{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+.filter{
+    border-radius: 16px;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-family: 'Inter';
+    font-family: 500;
+    border: 1px solid $gray;
+    cursor: pointer;
+    &:hover{
+        background: $gray;
+        color: $white;
+    }
+    &.active{
+        background: $purpleDark;
+    }
+}

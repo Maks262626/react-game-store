@@ -1,0 +1,34 @@
+.search {
+    position: relative;
+    display: flex;
+    align-items: center;
+    
+    img{
+        position: absolute;
+        width: 32px;
+        height: 32px;
+        filter: invert(58%) sepia(19%) saturate(0%) hue-rotate(278deg) brightness(89%) contrast(101%);
+    }
+}
+.searchInput {
+    font-size: 24px;
+    font-weight: 500;
+    padding: 12px 80px;
+    background-color: $darkGray;
+    border: 0;
+    border-radius: 16px;
+    color: $gray;
+    @media (max-height: 980px) {
+        width: 100%;
+     }
+}
+.seacrhIcon{
+    left: 24px;
+}
+.closeIcon{
+    cursor: pointer;
+    right: 24px;
+    &:hover{
+        filter: brightness(0) invert(1);
+    }
+}

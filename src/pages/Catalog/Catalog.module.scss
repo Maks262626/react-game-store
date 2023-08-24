@@ -1,0 +1,13 @@
+.catalog {
+    padding: 20px 30px;
+}
+
+.pageTop {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+
+    @media (max-width: 980px) {
+        flex-direction: column-reverse;
+    }
+}

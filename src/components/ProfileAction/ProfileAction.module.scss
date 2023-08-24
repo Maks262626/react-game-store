@@ -1,0 +1,69 @@
+.profileAction {
+    display: flex;
+    font-family: 'Roboto';
+    font-size: 10px;
+    font-weight: 500;
+    align-items: center;
+    @media (max-width: 980px) {
+        justify-content: flex-end;
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+}
+.action {
+    position: relative;
+    margin-right: 16px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    cursor: pointer;
+    &:hover{
+        svg path{
+            fill: $white;
+        }
+        span{
+            color: $white;
+            background-color: $purpleDark;
+        }
+    }
+    svg{
+        width: 26px;
+        height: 26px;
+        @media (max-width: 980px) {
+            width: 35px;
+            height: 35px;
+        }
+    }
+    span{
+        position: absolute;
+        text-align: center;
+        line-height: 15px;
+        top: 7px;
+        right: -4px;
+        color: $purpleDark;
+        background-color: $white;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        @media (max-width: 980px) {
+            width: 25px;
+            height: 25px;
+            line-height: 25px;
+        }
+    }
+}
+.avatar {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 3px solid transparent;
+    &:hover{
+        border: 3px solid $white;
+    }
+    @media (max-width: 980px) {
+        width: 70px;
+        height: 70px;
+    }
+}
+

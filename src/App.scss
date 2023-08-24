@@ -1,0 +1,95 @@
+@import url(https://fonts.googleapis.com/css?family=Inter:regular,500);
+@import url(https://fonts.googleapis.com/css?family=Quicksand:regular,500,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto:500,900);
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $black;
+  color: $white;
+  font-size: 18px;
+  font-family: 'Inter';
+  margin: 0;
+}
+a{
+  text-decoration: none;
+  color: #fff;
+}
+
+.wrapper {
+  position: relative;
+  display: flex;
+  height: 100vh;
+  overflow-x: hidden !important;
+
+  // @media (max-height: 500px),
+  // (max-width: 768px) {
+  //   flex-direction: column;
+  // }
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.main {
+  position: relative;
+  width: 100%;
+  flex: 1;
+  overflow-y: auto;
+
+  @media (max-height: 500px),
+  (max-width: 768px) {
+    overflow-y: visible;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  scrollbar-width: thin;
+  scrollbar-color: $purpleDark $purpleLight;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $purpleDark;
+}
+
+::-webkit-scrollbar-track {
+  background-color: $purpleLight;
+}
+
+.btn {
+  display: flex;
+  width: fit-content;
+  align-items: center;
+  background-color: $white;
+  color: $purpleLight;
+  padding: 12px 24px;
+  border: 0;
+  gap: 8px;
+  border-radius: 16px;
+  font-size: 16px;
+  transition: .3s;
+  cursor: pointer;
+  &:hover {
+    background-color: $purpleLight;
+    color: $white;
+    transition: .3s;
+
+    svg path {
+      fill: #fff;
+    }
+  }
+
+  svg {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+

@@ -1,0 +1,17 @@
+.cart {
+  display: flex;
+  @media (max-width: 1200px){
+    flex-direction: column;
+  }
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 40px;
+  flex: 1;
+  @media (max-height: 500px),(max-width: 768px) {
+    margin-top: 50px;
+  }
+}

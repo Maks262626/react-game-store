@@ -1,0 +1,14 @@
+.ordersWrapper{
+    padding: 20px;
+    @media (max-height: 500px),(max-width: 768px) {
+        margin-top: 40px;
+    }
+}
+.title{
+    margin-bottom: 30px;
+}
+.orders{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
