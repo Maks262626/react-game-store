@@ -5,25 +5,28 @@
 }
 .slider{
     position: relative;
+    transform: none !important;
     font-family: 'Quicksand';
     user-select: text;
     max-width: 100%;
     min-width: 0;
 }
+
 .slide{
     display: flex !important;
     justify-content: space-between;
     background: linear-gradient(180deg, rgba(161, 0, 237, 0.27) 0%, #DA00FE 100%);
-    padding: 32px 52px !important;
-    height: 300px;
     border-radius: 16px !important;
     max-width: 100% !important;
     width: auto !important;
     user-select: text;
     z-index: 10;
+    padding: 20px;
+    .swiper-wrapper,.swiper-slide{
+        transform: none !important;
+    }
     @media (max-width: 900px) {
         flex-direction: column-reverse;
-        height: 500px;
     }
     
     @media (max-width: 500px) {
